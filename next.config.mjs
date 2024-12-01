@@ -6,6 +6,7 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
     // outputStandalone: true,
+    // appDir: true, // Enables the app directory for routing
   },
 };
 
