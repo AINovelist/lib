@@ -25,6 +25,7 @@ export async function parseMarkdown(markdownContent: string): Promise<ParsedMark
 
   return {
     html: String(htmlResult),
+    // @ts-ignore
     reactComponent: result.result,
   };
 }
