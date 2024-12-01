@@ -7,22 +7,22 @@ const NavBar = () => {
     <Container>
       <Group>
         <Link href="/" passHref>
-          <Button variant="light">Home</Button>
+          <Button variant="light">شروع</Button>
         </Link>
         <Link href="/air-pollution" passHref>
-          <Button variant="light">Air Pollution</Button>
+          <Button variant="light">کاهش آلودگی هوا</Button>
         </Link>
         <Link href="/animal-protection" passHref>
-          <Button variant="light">Animal Protection</Button>
+          <Button variant="light">حفاظت از حیوانات</Button>
         </Link>
         <Link href="/tree-preservation" passHref>
-          <Button variant="light">Tree Preservation</Button>
+          <Button variant="light">حفاظت از درختان</Button>
         </Link>
         <Link href="/waste-reduction" passHref>
-          <Button variant="light">Waste Reduction</Button>
+          <Button variant="light">کاهش زباله</Button>
         </Link>
         <Link href="/water-conservation" passHref>
-          <Button variant="light">Water Conservation</Button>
+          <Button variant="light">صرفه جویی در آب</Button>
         </Link>
       </Group>
     </Container>
