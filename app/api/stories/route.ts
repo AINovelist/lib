@@ -24,6 +24,8 @@ export async function GET() {
       });
 
       for (let language of ["en", "fa"]) {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
         const languageFolder = topicFiles.find((file: any) => file.name === language);
         if (languageFolder && languageFolder.type === "dir") {
           const { data: languageFiles } = await octokit.repos.getContent({
@@ -31,7 +33,8 @@ export async function GET() {
             repo: "stories",
             path: `kids/${topic}/${language}`,
           });
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
           const stories = languageFiles.map((file: any) => ({
             id: file.name.replace(".md", ""),
             title: file.name.replace(".md", ""),
