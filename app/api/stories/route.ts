@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { Octokit } from "@octokit/rest";
 
 export async function GET() {
-  const octokit = new Octokit({auth: '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'});
+  const octokit = new Octokit();
 
   const topics = [
     "Air Pollution Reduction",
