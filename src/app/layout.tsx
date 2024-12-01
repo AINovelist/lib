@@ -3,6 +3,7 @@ import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { theme } from "./lib/theme";
 import NavBar from "./components/NavBar/NavBar";
+import { NavbarSegmented } from "./components/NavBar/NavbarSegmented";
 
 export const metadata = {
   title: "AI Novelist Library",
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="fa" dir="rtl">
-      <head>        
+      <head>
         <link rel="shortcut icon" href="/favicon.svg" />
         <link rel="preconnect" href="//fdn.fontcdn.ir" />
         <link rel="preconnect" href="//v1.fontapi.ir" />
@@ -28,7 +29,7 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
-          <NavBar />
+          <NavbarSegmented />
           {children}
         </MantineProvider>
       </body>
