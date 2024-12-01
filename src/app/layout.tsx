@@ -11,10 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: any }) {
   return (
-    <html lang="fa_IR">
-      <head>
-        <ColorSchemeScript />
+    <html lang="fa" dir="rtl">
+      <head>        
         <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="preconnect" href="//fdn.fontcdn.ir" />
+        <link rel="preconnect" href="//v1.fontapi.ir" />
+        <link href="https://v1.fontapi.ir/css/Vazirmatn" rel="stylesheet" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"

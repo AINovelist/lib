@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
 import { Image, Text, Badge, Button, Card, Group } from "@mantine/core";
-import Link from 'next/link';
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -15,12 +15,7 @@ const ReusableCard = ({ title, imageSrc, buttonText, linkTo }: CardProps) => {
     <Card shadow="sm" padding="lg" radius="md" withBorder>
       {/* Image Section */}
       <Card.Section>
-        <Image
-          src={imageSrc}
-          alt={title}
-          height={180}
-          fit="cover"
-        />
+        <Image src={imageSrc} alt={title} height={180} fit="cover" />
       </Card.Section>
 
       {/* Title Section */}
@@ -31,13 +26,18 @@ const ReusableCard = ({ title, imageSrc, buttonText, linkTo }: CardProps) => {
       </Group>
 
       {/* Button Section */}
-      <Link href={linkTo}>
-        <Button color="blue" fullWidth mt="md" radius="md">
-          {buttonText}
-        </Button>
-      </Link>
+      <Button
+        component={Link}
+        href={linkTo}
+        color="blue"
+        fullWidth
+        mt="md"
+        radius="md"
+      >
+        {buttonText}
+      </Button>
     </Card>
   );
-}
+};
 
 export default ReusableCard;
