@@ -2,7 +2,7 @@
 const { Octokit } = require('@octokit/octokit');
 
 async function getFilesFromRepo(owner: any, repo: any, path: any) {
-  const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+  const octokit = new Octokit();
 
   try {
     const response = await octokit.repos.getContent({
