@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   output: 'export',
+  basePath: '/lib',  // Replace with your GitHub repo name
+  assetPrefix: '/lib',  // Replace with your GitHub repo name
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
-    // outputStandalone: true,
-    // appDir: true, // Enables the app directory for routing
   },
 };
 
