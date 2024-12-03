@@ -1,12 +1,13 @@
 "use client";
 import { useState } from 'react';
 import {
+  IconDownload,
   IconFingerprint,
   IconLogout,
   IconShoppingCart,
   IconSwitchHorizontal,
 } from '@tabler/icons-react';
-import { SegmentedControl, Text } from '@mantine/core';
+import { Button, SegmentedControl, Text } from '@mantine/core';
 import classes from './NavbarSegmented.module.css';
 import Link from 'next/link'; // Import Link from Next.js
 
@@ -20,7 +21,7 @@ const tabs = {
   ],
   
   general: [
-    { link: '', label: 'Orders', icon: IconShoppingCart },
+    { link: 'https://ainovelist.github.io/kids', label: 'قصه گو', icon: IconShoppingCart },
   ],
 };
 
@@ -29,19 +30,22 @@ export function NavbarSegmented() {
   const [active, setActive] = useState('Billing');
 
   const links = tabs[section].map((item) => (
-    <Link href={item.link} key={item.label}>
-      <div
-        className={classes.link}
-        data-active={item.label === active || undefined}
-        onClick={(event) => {
-          event.preventDefault();
-          setActive(item.label);
-        }}
-      >
-        <item.icon className={classes.linkIcon} stroke={1.5} />
-        <span>{item.label}</span>
-      </div>
-    </Link>
+    <Button
+    component={Link}
+    href={item.link}
+    color="blue"
+    fullWidth
+    justify="space-between"
+    mt="md"
+    radius="md"
+    variant="transparent"
+    leftSection={<item.icon size={14} />}
+    rightSection={<span />}
+    size='compact-md'
+    key={item.label}
+  >
+    {item.label}
+  </Button>
   ));
 
   return (
