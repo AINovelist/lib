@@ -28,6 +28,12 @@ const cardData = [
     imageSrc: "https://raw.githubusercontent.com/AINovelist/stories/main/kids/assets/images/Waste%D9%80Reduction%D9%801.jpeg",
     buttonText: "قصه‌ها",
     linkTo: "/waste-reduction"
+  },
+  {
+    title: "صرفه جویی در آب",
+    imageSrc: "https://github.com/AINovelist/stories/raw/main/kids/assets/images/Water%D9%80Conservation%D9%804.jpeg",
+    buttonText: "قصه‌ها",
+    linkTo: "/waste-reduction"
   }
 ];
 
@@ -37,7 +43,7 @@ export default function HomePage() {
       <Grid mt={50}>
         {/* Map through the cardData array and render a ReusableCard for each entry */}
         {cardData.map((card, index) => (
-          <Grid.Col key={index} span={3}>
+          <Grid.Col key={index} span={4}>
             <ReusableCard
               title={card.title}
               imageSrc={card.imageSrc}
