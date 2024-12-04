@@ -12,6 +12,33 @@ export const stories = [
     category: "air-pollution",
   },
   {
+    title: "ماجراهای جادویی علی و تلاش برای تصفیه هوا",
+    imageSrc:
+      "https://github.com/AINovelist/stories/blob/main/kids/Air%20Pollution%20Reduction/images/6-in-city-6235798163-chibi.png?raw=true",
+    description:
+      "سلام علی! آیا می‌دانید چه چیزی باعث می‌شود هوایی که تنفس می‌کنیم تازه و تمیز باشد؟ این فقط درختان و گل ها نیست، بلکه انتخاب هایی است که ما هر روز انجام می دهیم! در این ماجراجویی جادویی، شما برای کاهش آلودگی هوا در شهر خود و تبدیل شدن به یک ابرقهرمان تصفیه کننده هوا، یک تلاش هیجان انگیز را آغاز خواهید کرد!",
+    link: "/6-in-city-6235798163",
+    category: "air-pollution",
+  },
+  {
+    title: "علی و لونا، مرغ دریایی",
+    imageSrc:
+      "https://github.com/AINovelist/stories/blob/main/kids/Air%20Pollution%20Reduction/images/6-in-coast-3445792285-chibi.png?raw=true",
+    description:
+      "آیا تا به حال فکر کرده اید که چرا گاهی اوقات هوای شهر ما مه آلود به نظر می رسد؟ با علی، یک کودک 6 ساله کنجکاو آشنا شوید که در حومه شهر زندگی می کند و عاشق بازی کردن در بیرون است. یک روز آفتابی، علی تصمیم می گیرد به ماجراجویی برود تا درباره هوایی که تنفس می کند بیشتر بداند.",
+    link: "/6-in-coast-3445792285",
+    category: "air-pollution",
+  },
+  {
+    title: "ماجراجویی آلودگی هوا علی و سام",
+    imageSrc:
+      "https://github.com/AINovelist/stories/blob/main/kids/Air%20Pollution%20Reduction/images/6-in-suburbs-6248542080-watercolor.png?raw=true",
+    description:
+      "سلام علی، آیا تا به حال دقت کرده اید که وقتی در ساحل نزدیک خانه خود بازی می کنید، هوا چقدر زیبا و تازه است؟ بوی شور دریا و صدای برخورد امواج به ساحل آن را به مکانی عالی برای دویدن و بازی تبدیل کرده است. اما آیا می دانید هوایی که تنفس می کنیم گاهی اوقات ممکن است آلوده شود و تنفس را برای ما سخت کند؟",
+    link: "/6-in-coast-3445792285",
+    category: "air-pollution",
+  },
+  {
     title: "جاوید در شهر آلوده",
     imageSrc:
       "https://github.com/AINovelist/stories/blob/main/kids/Air%20Pollution%20Reduction/images/javid-5-in-city-7715441635/1.jpeg?raw=true",
