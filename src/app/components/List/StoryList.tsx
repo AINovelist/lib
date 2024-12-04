@@ -1,6 +1,6 @@
-import { Container, Grid } from '@mantine/core';
-import StoryCard from '../Cards/StoryCard';
-import { stories } from '../../data/stories';
+import { Container, Grid } from "@mantine/core";
+import StoryCard from "../Cards/StoryCard";
+import { stories } from "../../data/stories";
 
 type StoryListProps = {
   category: string;
@@ -9,24 +9,26 @@ type StoryListProps = {
 
 const StoryList = ({ category, title }: StoryListProps) => {
   // Filter the stories based on the category passed in
-  const filteredStories = stories.filter(story => story.category === category);
+  const filteredStories = stories.filter(
+    (story) => story.category === category
+  );
 
   return (
     <div>
-      <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>{title}</h2>
+      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>{title}</h2>
       <Container>
-      <Grid gutter="md" mt="xl">
-        {filteredStories.map((story, index) => (
-          <Grid.Col key={index} span={4}>
-            <StoryCard
-              title={story.title}
-              imageSrc={story.imageSrc}
-              description={story.description}
-              link={story.link}
-            />
-          </Grid.Col>
-        ))}
-      </Grid>
+        <Grid gutter="md" mt="xl">
+          {filteredStories.map((story, index) => (
+            <Grid.Col span={{ base: 12, xs: 4, md: 3, lg: 6 }} key={index}>
+              <StoryCard
+                title={story.title}
+                imageSrc={story.imageSrc}
+                description={story.description}
+                link={story.link}
+              />
+            </Grid.Col>
+          ))}
+        </Grid>
       </Container>
     </div>
   );
