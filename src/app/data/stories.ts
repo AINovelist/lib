@@ -100,6 +100,14 @@ export const stories = [
     category: "water-conservation",
   },
   {
+    title: "مریم و قطرات آب جادویی",
+    imageSrc:
+      "https://github.com/AINovelist/stories/blob/main/kids/Water%20Conservation/images/6-in-suburbs-1274188180-cartoon.png?raw=true", // Replace with actual image link
+    description: "سلام مریم! آیا می دانید آب برای سیاره ما چقدر مهم است؟ درست مانند نیاز شما به آب برای نوشیدن، شستن دست ها و حمام کردن، گیاهان و حیوانات نیز برای زنده ماندن به آب نیاز دارند. در این داستان ویژه، شما به یک ماجراجویی جادویی می روید تا با اهمیت حفظ آب آشنا شوید.",
+    link: "/water-conservation",
+    category: "water-conservation",
+  },
+  {
     title: "ماهان و آب",
     imageSrc:
       "https://github.com/AINovelist/stories/raw/main/kids/assets/images/Water%D9%80Conservation%D9%804.jpeg", // Replace with actual image link
