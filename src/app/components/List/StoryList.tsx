@@ -19,7 +19,7 @@ const StoryList = ({ category, title }: StoryListProps) => {
       <Container>
         <Grid gutter="md" mt="xl">
           {filteredStories.map((story, index) => (
-            <Grid.Col span={{ base: 12, xs: 4, md: 3, lg: 6 }} key={index}>
+            <Grid.Col span={{ base: 12, xs: 6, md: 4, lg: 3 }} key={index}>
               <StoryCard
                 title={story.title}
                 imageSrc={story.imageSrc}
